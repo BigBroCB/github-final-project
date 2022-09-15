@@ -9,11 +9,21 @@
 
 /* Typography */
 
-/* Body and Nav */
+body {
+    margin: 0;
+    font-family: 'arimo', sans-serif;
+}
+
+h1 {
+    font-family: 'reeyregular', sans-serif;
+}
+
+/* Nav */
 
 nav li {
     display: inline-block;
     padding-right: 20px;
+    vertical-align: middle;
 }
 
 nav a {
@@ -22,10 +32,96 @@ nav a {
 }
 
 nav {
-    position: sticky;
-    position: -webkit-sticky;
     top: 0%;
     background-color: #ff3e3e;
-    padding: 10px;
-    font-size: x-large;
+    padding: 20px;
+    font-size: 30px;
+
 }
+
+.logo {
+    margin-right: 40px;
+}
+/* Forms */
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* Content */
+
+main {
+    margin: 5%;
+}
+
+/* Hero */
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), ("img/welcome.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  .hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .hero-text button:hover {
+    background-color: #555;
+    color: white;
+  }
+
+/* Footer */
+
+footer {
+    background-color: #ff3e3e;
+    padding: 5px 10px;
+}
+
+.fa-brands {
+    text-decoration: none;
+    color: black;
+    padding-right: 20px;
+    font-size: 30px;
+}
+
+.column {
+    width: 50%;
+    float: left;
+}
+
+.right {
+    text-align: right;
+
+}
+
+.clearfix {
+    clear: both;
+}
+
